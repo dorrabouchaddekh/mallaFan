@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Alamofire",
+        "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
+        "state": {
+          "branch": null,
+          "revision": "354dda32d89fc8cd4f5c46487f64957d355f53d8",
+          "version": "5.6.1"
+        }
+      },
+      {
+        "package": "CodeScanner",
+        "repositoryURL": "https://github.com/dorrabouchaddekh/CodeScanner",
+        "state": {
+          "branch": null,
+          "revision": "c27a66149b7483fe42e2ec6aad61d5c3fffe522d",
+          "version": "2.1.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

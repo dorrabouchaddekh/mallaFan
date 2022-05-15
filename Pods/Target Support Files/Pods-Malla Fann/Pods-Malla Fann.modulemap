@@ -1,0 +1,6 @@
+framework module Pods_Malla_Fann {
+  umbrella header "Pods-Malla Fann-umbrella.h"
+
+  export *
+  module * { export * }
+}
