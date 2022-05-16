@@ -38,30 +38,7 @@ struct ContentView: View {
         
     }
     
-//    func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//
-//
-//        if segue.identifier == "othersSegue" {
-//            let destination = segue.destination as! OthersLinkViewController
-//            destination.code = sender as? String
-//        }
-//    }
-//    var body : some View {
-//        NavigationView {
-//            List(links) { link in
-//                NavigationLink(destination: Text(link.name)) {
-//                    Image(link.imageName)
-//                    VStack(alignment: .leading) {
-//                        Text(link.name)
-//                        Text(link.headline)
-//                            .font(.subheadline)
-//                            .foregroundColor(.gray)
-//                    }
-//                }
-//            }
-//            .navigationBarTitle(Text("Tutors"))
-//        }
-//
+
     
     
     var body: some View{
@@ -71,6 +48,17 @@ struct ContentView: View {
             
             Button("Scan QR Code with camera"){
                 self.PresentingScannerView = true
+            }
+            .padding()
+            .background(Color(red: 0, green: 0, blue: 0.5, opacity: 1))
+            .clipShape(Capsule())
+            .sheet(isPresented: $PresentingScannerView) {
+                self.scanner
+                
+            }
+            Button("Scan QR "){
+                self.PresentingScannerView = true
+              
             }
             .padding()
             .background(Color(red: 0, green: 0, blue: 0.5, opacity: 1))
@@ -97,6 +85,7 @@ struct ContentView_Previews:PreviewProvider{
    
     }
 }
+
 
 
 

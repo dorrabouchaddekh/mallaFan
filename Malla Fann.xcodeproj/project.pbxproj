@@ -19,6 +19,8 @@
 		0E1B1A2028306244007FFCFF /* LinkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1B1A1F28306244007FFCFF /* LinkViewModel.swift */; };
 		0E1B1A222830A370007FFCFF /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1B1A212830A370007FFCFF /* WebViewController.swift */; };
 		0E1B1A2428311B45007FFCFF /* OthersLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1B1A2328311B45007FFCFF /* OthersLinkViewController.swift */; };
+		0E1B1A282831F6DC007FFCFF /* QRcheckinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1B1A272831F6DC007FFCFF /* QRcheckinViewController.swift */; };
+		0E1B1A2A28321D2C007FFCFF /* CheckinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1B1A2928321D2C007FFCFF /* CheckinViewController.swift */; };
 		0E2597D628189B8A005C843E /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2597D528189B8A005C843E /* Alert.swift */; };
 		0E2597D82818EFE3005C843E /* ModalTransitionListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2597D72818EFE3005C843E /* ModalTransitionListener.swift */; };
 		0E2597DA2818F2D9005C843E /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2597D92818F2D9005C843E /* ImageLoader.swift */; };
@@ -112,6 +114,8 @@
 		0E1B1A1F28306244007FFCFF /* LinkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkViewModel.swift; sourceTree = "<group>"; };
 		0E1B1A212830A370007FFCFF /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		0E1B1A2328311B45007FFCFF /* OthersLinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OthersLinkViewController.swift; sourceTree = "<group>"; };
+		0E1B1A272831F6DC007FFCFF /* QRcheckinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRcheckinViewController.swift; sourceTree = "<group>"; };
+		0E1B1A2928321D2C007FFCFF /* CheckinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckinViewController.swift; sourceTree = "<group>"; };
 		0E2597D528189B8A005C843E /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		0E2597D72818EFE3005C843E /* ModalTransitionListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalTransitionListener.swift; sourceTree = "<group>"; };
 		0E2597D92818F2D9005C843E /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
@@ -282,6 +286,8 @@
 				0E9AD080282D160C008190B1 /* ModifierProfilViewController.swift */,
 				0E1B1A212830A370007FFCFF /* WebViewController.swift */,
 				0E1B1A2328311B45007FFCFF /* OthersLinkViewController.swift */,
+				0E1B1A272831F6DC007FFCFF /* QRcheckinViewController.swift */,
+				0E1B1A2928321D2C007FFCFF /* CheckinViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -564,6 +570,7 @@
 				0EB46C2527FFD8E0007B82F1 /* DiscoverViewController.swift in Sources */,
 				0E039F222806827400CD24D9 /* ContentView.swift in Sources */,
 				0E64C3D8280FCC8800720549 /* Constant.swift in Sources */,
+				0E1B1A2A28321D2C007FFCFF /* CheckinViewController.swift in Sources */,
 				0E2597DA2818F2D9005C843E /* ImageLoader.swift in Sources */,
 				0EB46C2727FFE81A007B82F1 /* CustomCollectionViewCell.swift in Sources */,
 				0E9AD081282D160C008190B1 /* ModifierProfilViewController.swift in Sources */,
@@ -578,6 +585,7 @@
 				0E2597D82818EFE3005C843E /* ModalTransitionListener.swift in Sources */,
 				0E2597D628189B8A005C843E /* Alert.swift in Sources */,
 				0E887C872817899600C4E781 /* PubsViewModel.swift in Sources */,
+				0E1B1A282831F6DC007FFCFF /* QRcheckinViewController.swift in Sources */,
 				0E849AA92804F1B400AC2C0E /* SearchViewController.swift in Sources */,
 				0EE9936427FF315200FB1903 /* ViewController.swift in Sources */,
 				0E1B1A2028306244007FFCFF /* LinkViewModel.swift in Sources */,
@@ -692,7 +700,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -747,7 +755,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -774,7 +782,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -805,7 +813,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
