@@ -14,13 +14,13 @@ class ProfileViewController: UIViewController ,UICollectionViewDataSource,UIColl
     var profileOfSomeoneElse: User?
     var publications: [Publicationn] = []
     var utilisateurViewModel = UserViewModel()
-
+    var publication = Publicationn()
     
     @IBOutlet weak var profileImage: UIImageView!
     
     @IBOutlet weak var nomPrenomTF: UILabel!
     
-    
+    @IBOutlet weak var logoutButton: UIButton!
     func popoverDismissed() {
         initializeProfileMy()
         
@@ -35,7 +35,7 @@ class ProfileViewController: UIViewController ,UICollectionViewDataSource,UIColl
     
     var nbrPublications = ["125 piblications"]
     
-    var allcreations = ["img1","img10","img3","img11","img5","img6","img12","img8","img16","img2","img14","img7","img4","img9","img9","img9"]
+    var allcreations = ["img1","img10","img3","img11","img5","img6","img12","img8","img16","img2","img14","img7","img4","img9","img9","img9","img1","img10","img3","img11","img5","img6","img12","img8","img16","img2","img14","img7","img4","img9","img9","img9","img1","img10","img3","img11","img5","img6","img12","img8","img16","img2","img14","img7","img4","img9","img9","img9","img1","img10","img3","img11","img5","img6","img12","img8","img16","img2","img14","img7","img4","img9","img9","img9","img1","img10","img3","img11","img5","img6","img12","img8","img16","img2","img14","img7","img4","img9","img9","img9","img1","img10","img3","img11","img5","img6","img12","img8","img16","img2","img14","img7","img4","img9","img9","img9","img1","img10","img3","img11","img5","img6","img12","img8","img16","img2","img14","img7","img4","img9","img9","img9","img4","img9","img9","img9","img1","img10","img3","img11","img5","img6","img12","img8","img16","img2","img14","img7","img4","img9","img9","img9","img1","img10","img3","img11","img5","img6","img12","img8","img16","img2","img14","img7","img4","img9","img9","img9","img1","img10","img3","img11","img5","img6","img12","img8","img16","img2","img14","img7","img4","img9","img9","img9"]
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -86,32 +86,40 @@ class ProfileViewController: UIViewController ,UICollectionViewDataSource,UIColl
     }
     
     func collectionView(_ collectionView: UICollectionView, heightForPhotoAtIndexPath indexPath: IndexPath) -> CGFloat {
-        //let image = UIImage(named: "\(allcreations[indexPath.row] ).jpeg")
-        let url = URL(string: Constant.host+publications[indexPath.row].pictureId!)
-        let data = try? Data(contentsOf: url!) //make sure your image in this url does exist, otherwise unwrap in a if let check / try-catch
-        let image = UIImage(data: data!)
-            print("*******************")
-        print(image!.size.height)
         
+        let image = UIImage(named: "\(allcreations[indexPath.row]).jpeg")
         if let height = image?.size.height {
-           return height
-     }
+            return height
+        }
         return 0.0
+        
+        
+//        //let image = UIImage(named: "\(allcreations[indexPath.row] ).jpeg")
+//        let url = URL(string: Constant.host+publications[indexPath.row].pictureId!)
+//        let data = try? Data(contentsOf: url!) //make sure your image in this url does exist, otherwise unwrap in a if let check / try-catch
+//        let image = UIImage(data: data!)
+//            print("*******************")
+//        print(image!.size.height)
+//
+//        if let height = image?.size.height {
+//           return height
+//     }
+//        return 0.0
     }
     
     
     //Delegate protocol
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "toEnchereSegue", sender: indexPath)
+        performSegue(withIdentifier: "toEnchereSegue", sender: publications[indexPath.row]._id)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         
         if segue.identifier == "toEnchereSegue" {
-            let index = sender as! IndexPath
+           
             let destination = segue.destination as! EnchereViewController
-            destination.artName = allcreations[index.row]
+            destination._id = sender as? String
         }
     }
     
@@ -128,6 +136,9 @@ class ProfileViewController: UIViewController ,UICollectionViewDataSource,UIColl
                 nomPrenomTF.text = (result?.firstname)! + " " + (result?.lastname)!
                 
                 self.profileImage.loadFrom(URLAddress: Constant.host+(result?.pictureId)!)
+                if((result?.pictureId?.contains("https")) != nil) {
+                                    self.profileImage.loadFrom(URLAddress: result?.pictureId ?? "")
+                                }
 //                ImageLoader.shared.loadImage(identifier: (user?.pictureId)!, url: "uploads/users" + (user?.pictureId)!) { imageResp in
 //
 //                    profileImage.image = imageResp
@@ -140,7 +151,16 @@ class ProfileViewController: UIViewController ,UICollectionViewDataSource,UIColl
         }
     }
 
-    
+    func initializeProfileOfSomeoneElse(){
+        
+        let utilisateur = profileOfSomeoneElse!
+        
+        nomPrenomTF.text = (utilisateur.firstname)! + " " + (utilisateur.lastname)!
+        
+        self.profileImage.loadFrom(URLAddress: Constant.host+(utilisateur.pictureId)!)
+        if((utilisateur.pictureId?.contains("https")) != nil) {
+                            self.profileImage.loadFrom(URLAddress: utilisateur.pictureId ?? "")
+        }}
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -151,8 +171,8 @@ class ProfileViewController: UIViewController ,UICollectionViewDataSource,UIColl
 //        profileImage.layer.borderColor = UIColor.white.cgColor
 //        profileImage.layer.borderWidth = 5.0
         
-        initializeProfileMy()
-        initializeHistory()
+//        initializeProfileMy()
+//        initializeHistory()
 
         
         
@@ -170,10 +190,17 @@ class ProfileViewController: UIViewController ,UICollectionViewDataSource,UIColl
         imgProfil.layer.cornerRadius = imgProfil.frame.height/2
         imgProfil.clipsToBounds = true */
         // Do any additional setup after loading the view.
+        if profileOfSomeoneElse == nil {
+            initializeProfileMy()
+            initializeHistory()
+        } else {
+            initializeProfileOfSomeoneElse()
+            initializeHistory()
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        initializeProfileMy()
+//        initializeProfileMy()
 
         initializeHistory()
     }
@@ -188,9 +215,14 @@ class ProfileViewController: UIViewController ,UICollectionViewDataSource,UIColl
                 self.pCollectionView.reloadData()
                self.pdpCollectionViewCell.reloadData()
             }else {
-                self.present(Alert.makeAlert(titre: "Error", message: "Could not load publications "),animated: true)
+              //  self.present(Alert.makeAlert(titre: "Error", message: "Could not load publications "),animated: true)
             }
         })}
+    
+    @IBAction func deconnexion(_ sender: Any) {
+        UserDefaults.standard.set("", forKey: "_id")
+        performSegue(withIdentifier: "logoutSegue", sender: nil)
+    }
 
 
 }

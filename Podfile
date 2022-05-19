@@ -7,9 +7,10 @@ target 'Malla Fann' do
   use_frameworks!
 
   # Pods for Malla Fann
+  pod 'GoogleSignIn'
   pod 'Alamofire'
   pod 'SwiftyJSON'
-
+  
 
 #  target 'Malla FannTests' do
 #    inherit! :search_paths

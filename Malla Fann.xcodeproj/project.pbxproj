@@ -39,7 +39,16 @@
 		0E887C872817899600C4E781 /* PubsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E887C862817899600C4E781 /* PubsViewModel.swift */; };
 		0E887C8B28179C1700C4E781 /* PubsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E887C8A28179C1700C4E781 /* PubsModel.swift */; };
 		0E899CC428100441000C071F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E899CC328100441000C071F /* LoginViewController.swift */; };
+		0E89CF9A28359131008C87EE /* LocationCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E89CF9928359131008C87EE /* LocationCellViewController.swift */; };
+		0E89CF9C2835E85B008C87EE /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E89CF9B2835E85B008C87EE /* DateUtils.swift */; };
 		0E902E092824496900613234 /* Publication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E902E082824496900613234 /* Publication.swift */; };
+		0E98C6B3283498D600693621 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E98C6B2283498D600693621 /* LocationViewController.swift */; };
+		0E98C6B52834992B00693621 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E98C6B42834992B00693621 /* Location.swift */; };
+		0E98C6B7283499AF00693621 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E98C6B6283499AF00693621 /* LocationViewModel.swift */; };
+		0E98C6B92834B6B300693621 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E98C6B82834B6B300693621 /* Event.swift */; };
+		0E98C6BF2834B7A800693621 /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E98C6BE2834B7A800693621 /* EventViewModel.swift */; };
+		0E98C6C12834D50700693621 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E98C6C02834D50700693621 /* EventsViewController.swift */; };
+		0E98C6C32834DE7700693621 /* LocationMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E98C6C22834DE7700693621 /* LocationMapViewController.swift */; };
 		0E9AD081282D160C008190B1 /* ModifierProfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9AD080282D160C008190B1 /* ModifierProfilViewController.swift */; };
 		0E9F49B22823E64500B5630F /* PublicationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9F49B12823E64500B5630F /* PublicationViewModel.swift */; };
 		0EB10317281370BA0091D0CD /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB10316281370BA0091D0CD /* LoginModel.swift */; };
@@ -68,7 +77,7 @@
 		0EE9938427FF315300FB1903 /* Malla_FannUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE9938327FF315300FB1903 /* Malla_FannUITests.swift */; };
 		0EE9938627FF315300FB1903 /* Malla_FannUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE9938527FF315300FB1903 /* Malla_FannUITestsLaunchTests.swift */; };
 		0EE9939327FF38AB00FB1903 /* (null) in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		41185341B3420B4D1FEF49A2 /* Pods_Malla_Fann.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49F4C27FF9A489D1731138F1 /* Pods_Malla_Fann.framework */; };
+		3D09F9524719B5D618883E27 /* Pods_Malla_Fann.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46121EB4430B5EF57EB467B4 /* Pods_Malla_Fann.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,7 +142,16 @@
 		0E887C862817899600C4E781 /* PubsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PubsViewModel.swift; sourceTree = "<group>"; };
 		0E887C8A28179C1700C4E781 /* PubsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PubsModel.swift; sourceTree = "<group>"; };
 		0E899CC328100441000C071F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0E89CF9928359131008C87EE /* LocationCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCellViewController.swift; sourceTree = "<group>"; };
+		0E89CF9B2835E85B008C87EE /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
 		0E902E082824496900613234 /* Publication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Publication.swift; sourceTree = "<group>"; };
+		0E98C6B2283498D600693621 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		0E98C6B42834992B00693621 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		0E98C6B6283499AF00693621 /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
+		0E98C6B82834B6B300693621 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		0E98C6BE2834B7A800693621 /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
+		0E98C6C02834D50700693621 /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		0E98C6C22834DE7700693621 /* LocationMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapViewController.swift; sourceTree = "<group>"; };
 		0E9AD080282D160C008190B1 /* ModifierProfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifierProfilViewController.swift; sourceTree = "<group>"; };
 		0E9F49B12823E64500B5630F /* PublicationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicationViewModel.swift; sourceTree = "<group>"; };
 		0EB10316281370BA0091D0CD /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
@@ -165,9 +183,9 @@
 		0EE9937F27FF315300FB1903 /* Malla FannUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Malla FannUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EE9938327FF315300FB1903 /* Malla_FannUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Malla_FannUITests.swift; sourceTree = "<group>"; };
 		0EE9938527FF315300FB1903 /* Malla_FannUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Malla_FannUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		1B7686C07FE19B3842196F13 /* Pods-Malla Fann.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Malla Fann.debug.xcconfig"; path = "Target Support Files/Pods-Malla Fann/Pods-Malla Fann.debug.xcconfig"; sourceTree = "<group>"; };
-		49F4C27FF9A489D1731138F1 /* Pods_Malla_Fann.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Malla_Fann.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BBBD8F0596A4AF57F0AD5AAC /* Pods-Malla Fann.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Malla Fann.release.xcconfig"; path = "Target Support Files/Pods-Malla Fann/Pods-Malla Fann.release.xcconfig"; sourceTree = "<group>"; };
+		10AC7A4161A14B1FB4148803 /* Pods-Malla Fann.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Malla Fann.debug.xcconfig"; path = "Target Support Files/Pods-Malla Fann/Pods-Malla Fann.debug.xcconfig"; sourceTree = "<group>"; };
+		46121EB4430B5EF57EB467B4 /* Pods_Malla_Fann.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Malla_Fann.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4E8F8CACD8590337FEE2642 /* Pods-Malla Fann.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Malla Fann.release.xcconfig"; path = "Target Support Files/Pods-Malla Fann/Pods-Malla Fann.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,7 +211,7 @@
 				0E64C3E0280FD78300720549 /* Alamofire in Frameworks */,
 				0E039F182806399000CD24D9 /* CoreLocation.framework in Frameworks */,
 				0E198FAE2806BC5400A30D5D /* CodeScanner in Frameworks */,
-				41185341B3420B4D1FEF49A2 /* Pods_Malla_Fann.framework in Frameworks */,
+				3D09F9524719B5D618883E27 /* Pods_Malla_Fann.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +234,7 @@
 				0E2597D72818EFE3005C843E /* ModalTransitionListener.swift */,
 				0E2597D92818F2D9005C843E /* ImageLoader.swift */,
 				0EB54FB6282B99A900305E89 /* LoadingScreen.swift */,
+				0E89CF9B2835E85B008C87EE /* DateUtils.swift */,
 			);
 			path = Constant;
 			sourceTree = "<group>";
@@ -237,6 +256,8 @@
 				0E887C8A28179C1700C4E781 /* PubsModel.swift */,
 				0E902E082824496900613234 /* Publication.swift */,
 				0E1B1A1D28306022007FFCFF /* Link.swift */,
+				0E98C6B42834992B00693621 /* Location.swift */,
+				0E98C6B82834B6B300693621 /* Event.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -249,6 +270,8 @@
 				0EB103182813729B0091D0CD /* RegisterViewModel.swift */,
 				0E9F49B12823E64500B5630F /* PublicationViewModel.swift */,
 				0E1B1A1F28306244007FFCFF /* LinkViewModel.swift */,
+				0E98C6B6283499AF00693621 /* LocationViewModel.swift */,
+				0E98C6BE2834B7A800693621 /* EventViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -276,7 +299,6 @@
 				0E039F212806827400CD24D9 /* ContentView.swift */,
 				0E198FAF2806C7C900A30D5D /* ScanViewController.swift */,
 				0E198FB12806C9C100A30D5D /* GenerateViewController.swift */,
-				0EDEF4C1280F57C100BA2704 /* AddViewController.swift */,
 				0E64C3E1280FDA6200720549 /* RegisterViewController.swift */,
 				0E899CC328100441000C071F /* LoginViewController.swift */,
 				0EB54FB4282B986900305E89 /* MdpOublieViewController.swift */,
@@ -288,6 +310,11 @@
 				0E1B1A2328311B45007FFCFF /* OthersLinkViewController.swift */,
 				0E1B1A272831F6DC007FFCFF /* QRcheckinViewController.swift */,
 				0E1B1A2928321D2C007FFCFF /* CheckinViewController.swift */,
+				0E98C6B2283498D600693621 /* LocationViewController.swift */,
+				0EDEF4C1280F57C100BA2704 /* AddViewController.swift */,
+				0E98C6C02834D50700693621 /* EventsViewController.swift */,
+				0E98C6C22834DE7700693621 /* LocationMapViewController.swift */,
+				0E89CF9928359131008C87EE /* LocationCellViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -354,7 +381,7 @@
 			children = (
 				0E039F1B28063A9900CD24D9 /* CoreLocationUI.framework */,
 				0E039F172806399000CD24D9 /* CoreLocation.framework */,
-				49F4C27FF9A489D1731138F1 /* Pods_Malla_Fann.framework */,
+				46121EB4430B5EF57EB467B4 /* Pods_Malla_Fann.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -362,8 +389,8 @@
 		C4432D621B8FEBFEFDE52E0A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1B7686C07FE19B3842196F13 /* Pods-Malla Fann.debug.xcconfig */,
-				BBBD8F0596A4AF57F0AD5AAC /* Pods-Malla Fann.release.xcconfig */,
+				10AC7A4161A14B1FB4148803 /* Pods-Malla Fann.debug.xcconfig */,
+				C4E8F8CACD8590337FEE2642 /* Pods-Malla Fann.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -375,12 +402,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0EE9938927FF315300FB1903 /* Build configuration list for PBXNativeTarget "Malla Fann" */;
 			buildPhases = (
-				037EB04E12CA7B5FB662FD60 /* [CP] Check Pods Manifest.lock */,
+				D673AC81AF278A2EE3B4A69E /* [CP] Check Pods Manifest.lock */,
 				0EE9935827FF315200FB1903 /* Sources */,
 				0EE9935A27FF315200FB1903 /* Resources */,
 				0EE9939427FF38AB00FB1903 /* Embed Frameworks */,
 				71C07AE6FC5D5B7252E00448 /* Frameworks */,
-				2C8A63138DCA8D9363464FE5 /* [CP] Embed Pods Frameworks */,
+				2C73DAB29571D3A6D9B3CC3A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -506,7 +533,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		037EB04E12CA7B5FB662FD60 /* [CP] Check Pods Manifest.lock */ = {
+		2C73DAB29571D3A6D9B3CC3A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Malla Fann/Pods-Malla Fann-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Malla Fann/Pods-Malla Fann-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Malla Fann/Pods-Malla Fann-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D673AC81AF278A2EE3B4A69E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -528,23 +572,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		2C8A63138DCA8D9363464FE5 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Malla Fann/Pods-Malla Fann-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Malla Fann/Pods-Malla Fann-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Malla Fann/Pods-Malla Fann-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -555,12 +582,15 @@
 				0EB54FB5282B986900305E89 /* MdpOublieViewController.swift in Sources */,
 				0EB54FBB282BA1C100305E89 /* ChangerMdpViewController.swift in Sources */,
 				0E849AAB2804F6ED00AC2C0E /* FilterViewController.swift in Sources */,
+				0E98C6BF2834B7A800693621 /* EventViewModel.swift in Sources */,
 				0E3D2C982804E6C900BDF039 /* ArtViewController.swift in Sources */,
 				0EB46C2B280008A1007B82F1 /* PinterestLayout.swift in Sources */,
 				0EB54FB9282B9D0C00305E89 /* ConfirmationViewController.swift in Sources */,
+				0E98C6B52834992B00693621 /* Location.swift in Sources */,
 				0EB46C2927FFEF60007B82F1 /* NewCreationsCollectionViewCell.swift in Sources */,
 				0EB46C1D27FFC29C007B82F1 /* CollectionViewCell.swift in Sources */,
 				0E899CC428100441000C071F /* LoginViewController.swift in Sources */,
+				0E98C6B92834B6B300693621 /* Event.swift in Sources */,
 				0E64C3E6280FEEE900720549 /* UserViewModel.swift in Sources */,
 				0E64C3E4280FED6000720549 /* User.swift in Sources */,
 				0E1B1A2428311B45007FFCFF /* OthersLinkViewController.swift in Sources */,
@@ -573,6 +603,9 @@
 				0E1B1A2A28321D2C007FFCFF /* CheckinViewController.swift in Sources */,
 				0E2597DA2818F2D9005C843E /* ImageLoader.swift in Sources */,
 				0EB46C2727FFE81A007B82F1 /* CustomCollectionViewCell.swift in Sources */,
+				0E98C6B7283499AF00693621 /* LocationViewModel.swift in Sources */,
+				0E98C6C12834D50700693621 /* EventsViewController.swift in Sources */,
+				0E98C6B3283498D600693621 /* LocationViewController.swift in Sources */,
 				0E9AD081282D160C008190B1 /* ModifierProfilViewController.swift in Sources */,
 				0EB46C2D28002526007B82F1 /* ProfileViewController.swift in Sources */,
 				0E849AAD2805011A00AC2C0E /* FilteredViewController.swift in Sources */,
@@ -581,6 +614,7 @@
 				0E1B1A222830A370007FFCFF /* WebViewController.swift in Sources */,
 				0E1B1A1E28306022007FFCFF /* Link.swift in Sources */,
 				0EB103192813729B0091D0CD /* RegisterViewModel.swift in Sources */,
+				0E89CF9C2835E85B008C87EE /* DateUtils.swift in Sources */,
 				0EDEF4C2280F57C100BA2704 /* AddViewController.swift in Sources */,
 				0E2597D82818EFE3005C843E /* ModalTransitionListener.swift in Sources */,
 				0E2597D628189B8A005C843E /* Alert.swift in Sources */,
@@ -588,11 +622,13 @@
 				0E1B1A282831F6DC007FFCFF /* QRcheckinViewController.swift in Sources */,
 				0E849AA92804F1B400AC2C0E /* SearchViewController.swift in Sources */,
 				0EE9936427FF315200FB1903 /* ViewController.swift in Sources */,
+				0E89CF9A28359131008C87EE /* LocationCellViewController.swift in Sources */,
 				0E1B1A2028306244007FFCFF /* LinkViewModel.swift in Sources */,
 				0E887C8B28179C1700C4E781 /* PubsModel.swift in Sources */,
 				0EB46C1F27FFC2B3007B82F1 /* CollectionViewCell2.swift in Sources */,
 				0EB54FBD282BAD4A00305E89 /* RechercheViewController.swift in Sources */,
 				0EE9936027FF315200FB1903 /* AppDelegate.swift in Sources */,
+				0E98C6C32834DE7700693621 /* LocationMapViewController.swift in Sources */,
 				0E64C3DA280FCE5000720549 /* RegisterModel.swift in Sources */,
 				0EE9936227FF315200FB1903 /* SceneDelegate.swift in Sources */,
 				0EB10317281370BA0091D0CD /* LoginModel.swift in Sources */,
@@ -700,7 +736,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -755,7 +791,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -767,7 +803,7 @@
 		};
 		0EE9938A27FF315300FB1903 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1B7686C07FE19B3842196F13 /* Pods-Malla Fann.debug.xcconfig */;
+			baseConfigurationReference = 10AC7A4161A14B1FB4148803 /* Pods-Malla Fann.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -777,12 +813,15 @@
 				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Malla Fann/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -798,7 +837,7 @@
 		};
 		0EE9938B27FF315300FB1903 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BBBD8F0596A4AF57F0AD5AAC /* Pods-Malla Fann.release.xcconfig */;
+			baseConfigurationReference = C4E8F8CACD8590337FEE2642 /* Pods-Malla Fann.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -808,12 +847,15 @@
 				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Malla Fann/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

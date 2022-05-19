@@ -43,7 +43,10 @@ class ModifierProfilViewController: UIViewController , UIImagePickerControllerDe
             nomTextField.text = result?.firstname
             prenomTextField.text = result?.lastname
 
-            
+            self.profileImage.loadFrom(URLAddress: Constant.host+(result?.pictureId)!)
+            if((result?.pictureId?.contains("https")) != nil) {
+                                self.profileImage.loadFrom(URLAddress: result?.pictureId ?? "")
+                            }
       //      ImageLoader.shared.loadImage(identifier: (utilisateur?.idPhoto)!, url: IMAGE_URL + (utilisateur?.idPhoto)!) { imageResp in
                 
              //   profileImage.image = imageResp

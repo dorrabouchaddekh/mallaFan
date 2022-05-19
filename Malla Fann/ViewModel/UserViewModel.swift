@@ -159,6 +159,36 @@ print("============================aaaaa=======================")
     }
     
     
+    func GoogleSignIn(user : User,completed: @escaping (Bool) -> Void){
+        AF.request(Constant.host + "api/user/RegisterWithGoogle",method: .post,parameters: [
+                "email":user.email!,
+                "firstname":user.firstname!,
+                "lastname":user.lastname!,
+                "pictureId":user.pictureId!
+            ],encoding: JSONEncoding.default)
+            .validate(statusCode:200..<300)
+            .validate(contentType: ["application/json"])
+            .responseData { response in
+                switch response.result {
+                case .success:
+                    let jsonData = JSON(response.data!)
+                    let utilisateur = self.makeItem(jsonItem: jsonData["use"])
+                    UserDefaults.standard.setValue(utilisateur.firstname, forKey: "firstname")
+                    UserDefaults.standard.setValue(utilisateur._id, forKey: "_id")
+                    print(utilisateur._id)
+                    UserDefaults.standard.setValue(utilisateur.pictureId, forKey: "pictureId")
+                    print("Validation Successful")
+                    completed(true)
+                case let .failure(error):
+                    print("-------5555----55")
+                    print(error)
+                    completed(false)
+                }
+                
+            }
+        }
+    
+    
     
     
 //    func changerPhotoDeProfil( uiImage: UIImage,user : User, completed: @escaping (Bool) -> Void ) {
@@ -219,7 +249,17 @@ print("============================aaaaa=======================")
             }
     }
     
-    
+    func supprimerUtilisateur(user: User) {
+        
+        AF.request(Constant.host + "utilisateur",
+                   method: .delete,
+                   parameters: ["_id": user._id!],
+                   encoding: JSONEncoding.default,
+                   headers: nil)
+            .response { response in
+                print(response)
+            }
+    }
     
     
     func recupererToutUtilisateur( completed: @escaping (Bool, [User]?) -> Void ) {
@@ -231,8 +271,8 @@ print("============================aaaaa=======================")
                 switch response.result {
                 case .success:
                     var utilisateurs : [User]? = []
-                    for singleJsonItem in JSON(response.data!)["response"] {
-                        utilisateurs!.append(self.makeItem(jsonItem: singleJsonItem.1))
+                    for singleJsonItem in JSON(response.data!) {
+                       utilisateurs!.append(self.makeItem(jsonItem: singleJsonItem.1))
                     }
                     completed(true, utilisateurs)
                 case let .failure(error):

@@ -93,8 +93,8 @@ class RechercheViewController: UIViewController , UICollectionViewDelegate, UICo
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView == cvPosts {
-            /*selectedPublication = publications[indexPath.row]
-            self.performSegue(withIdentifier: "displayPublicationSegue", sender: selectedPublication)*/
+            selectedPublication = publications[indexPath.row]
+            self.performSegue(withIdentifier: "displayPublicationSegue", sender: selectedPublication)
         } else if collectionView == cvPeople {
             selectedUtilisateur = utilisateurs[indexPath.row]
             let viewController: ProfileViewController = self.storyboard!.instantiateViewController(withIdentifier: "profile") as! ProfileViewController
@@ -131,7 +131,7 @@ class RechercheViewController: UIViewController , UICollectionViewDelegate, UICo
         
         cvPosts.reloadData()
         cvPeople.reloadData()
-        cvMusique.reloadData()
+        
         
         if searchText == "" {
             publications = publicationsAux
@@ -167,7 +167,7 @@ class RechercheViewController: UIViewController , UICollectionViewDelegate, UICo
                 self.utilisateurs = utilisateursFromRep!
                 self.cvPeople.reloadData()
             } else {
-                self.present(Alert.makeAlert(titre: "Error", message: "Could not load users "),animated: true)
+             //   self.present(Alert.makeAlert(titre: "Error", message: "Could not load users "),animated: true)
             }
         }
         

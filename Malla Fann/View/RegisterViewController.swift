@@ -32,6 +32,9 @@ class RegisterViewController: UIViewController , UIImagePickerControllerDelegate
 
         @IBOutlet weak var addPictureBtn: UIButton!
     
+    
+  
+    
     func goToLogin(email: String?) {
         self.performSegue(withIdentifier: "connexionSegue", sender: email)
     }

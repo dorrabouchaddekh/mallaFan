@@ -15,13 +15,13 @@
         var qrcodeFrameView: UIView?
         var users = User()
         var userViewModel = UserViewModel()
-//        var location = Location()
+        var _id: String?//        var location = Location()
         @IBOutlet weak var messageLabel: UILabel!
         
         override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             if segue.identifier == "checkinConfirmation" {
                 let destination = segue.destination as! OthersLinkViewController
-                destination.code = users._id
+                destination._id = self._id
                 
             }
         }
@@ -89,7 +89,15 @@
                 qrcodeFrameView?.frame = barCodeObject!.bounds
                 if metadataObj.stringValue != nil {
                     messageLabel.text = metadataObj.stringValue
-//                    locationViewModel.retrieveLocById(idLoc: metadataObj.stringValue!){ [self] success, result in
+                    self._id = metadataObj.stringValue
+               
+                }
+                    //print(metadataObj.stringValue)
+                   
+                
+                    performSegue(withIdentifier: "checkinConfirmation", sender: nil)
+                self.captureSession.stopRunning()
+                    //                    locationViewModel.retrieveLocById(idLoc: metadataObj.stringValue!){ [self] success, result in
 //                        if success {
 //                            print(result)
 //                            checkin.location = result
@@ -99,7 +107,7 @@
                       //  }
                     
                     
-                }
+                
             }
         }
         

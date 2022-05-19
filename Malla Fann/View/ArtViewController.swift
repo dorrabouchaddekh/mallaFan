@@ -11,8 +11,7 @@ class ArtViewController: UIViewController ,UICollectionViewDataSource,UICollecti
 
     @IBOutlet weak var pCollectionView: UICollectionView!
     
-    var allcreations = ["img1","img10","img3","img11","img5","img6","img12","img8","img16","img2","img14","img7","img4","img9"]
-    
+    var allcreations = ["img1","img10","img3","img11","img5","img6","img12","img8","img16","img2","img14","img7","img4","img9","img9","img9","img1","img10","img3","img11","img5","img6","img12","img8","img16","img2","img14","img7","img4","img9","img9","img9","img1","img10","img3","img11","img5","img6","img12","img8","img16","img2","img14","img7","img4","img9","img9","img9","img1","img10","img3","img11","img5","img6","img12","img8","img16","img2","img14","img7","img4","img9","img9","img9","img1","img10","img3","img11","img5","img6","img12","img8","img16","img2","img14","img7","img4","img9","img9","img9","img1","img10","img3","img11","img5","img6","img12","img8","img16","img2","img14","img7","img4","img9","img9","img9","img1","img10","img3","img11","img5","img6","img12","img8","img16","img2","img14","img7","img4","img9","img9","img9","img4","img9","img9","img9","img1","img10","img3","img11","img5","img6","img12","img8","img16","img2","img14","img7","img4","img9","img9","img9","img1","img10","img3","img11","img5","img6","img12","img8","img16","img2","img14","img7","img4","img9","img9","img9","img1","img10","img3","img11","img5","img6","img12","img8","img16","img2","img14","img7","img4","img9","img9","img9"]
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

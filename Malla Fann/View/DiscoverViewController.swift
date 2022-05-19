@@ -28,7 +28,7 @@ class DiscoverViewController: UIViewController ,UICollectionViewDataSource,UICol
     
    // @IBOutlet weak var cCollectionView: UICollectionView!
     var ncreations = ["img1","img2","img3","img4","img5","img6","img7","img8","img9"]
-    var allcreations = ["img1","img10","img3","img11","img5","img6","img12","img8","img16","img2","img14","img7","img4","img9","img1","img10","img3","img11","img5","img6","img12","img8","img16","img2","img14","img7","img4","img9"]
+    var allcreations = ["img1","img10","img3","img11","img5","img6","img12","img8","img16","img2","img14","img7","img4","img9","img9","img9","img1","img10","img3","img11","img5","img6","img12","img8","img16","img2","img14","img7","img4","img9","img9","img9","img1","img10","img3","img11","img5","img6","img12","img8","img16","img2","img14","img7","img4","img9","img9","img9","img1","img10","img3","img11","img5","img6","img12","img8","img16","img2","img14","img7","img4","img9","img9","img9","img1","img10","img3","img11","img5","img6","img12","img8","img16","img2","img14","img7","img4","img9","img9","img9","img1","img10","img3","img11","img5","img6","img12","img8","img16","img2","img14","img7","img4","img9","img9","img9","img1","img10","img3","img11","img5","img6","img12","img8","img16","img2","img14","img7","img4","img9","img9","img9","img4","img9","img9","img9","img1","img10","img3","img11","img5","img6","img12","img8","img16","img2","img14","img7","img4","img9","img9","img9","img1","img10","img3","img11","img5","img6","img12","img8","img16","img2","img14","img7","img4","img9","img9","img9","img1","img10","img3","img11","img5","img6","img12","img8","img16","img2","img14","img7","img4","img9","img9","img9"]
     
     var categories = ["painterIcon","literateIcon","musiqueIcon","photographIcon","plasticartIcon","dancerIcon","painterIcon","literateIcon","musiqueIcon"]
     var artistnames = ["painterIcon","literateIcon","musiqueIcon","photographIcon","plasticartIcon","dancerIcon","painterIcon","literateIcon","musiqueIcon"]
@@ -144,7 +144,7 @@ class DiscoverViewController: UIViewController ,UICollectionViewDataSource,UICol
                 self.cCollectionView.reloadData()
            //    self.pdpCollectionViewCell.reloadData()
             }else {
-                self.present(Alert.makeAlert(titre: "Error", message: "Could not load publications "),animated: true)
+             //   self.present(Alert.makeAlert(titre: "Error", message: "Could not load publications "),animated: true)
             }
         })
         
@@ -154,7 +154,7 @@ class DiscoverViewController: UIViewController ,UICollectionViewDataSource,UICol
                 self.newCollectionView.reloadData()
            //    self.pdpCollectionViewCell.reloadData()
             }else {
-                self.present(Alert.makeAlert(titre: "Error", message: "Could not load publications "),animated: true)
+           //     self.present(Alert.makeAlert(titre: "Error", message: "Could not load publications "),animated: true)
             }
         })
         

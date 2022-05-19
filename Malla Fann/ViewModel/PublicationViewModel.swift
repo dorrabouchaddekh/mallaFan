@@ -81,6 +81,37 @@ class PublicationViewModel {
             }
     }
     
+    func recupererPublicationParId(_id: String, completed: @escaping (Bool, Publicationn?) -> Void ) {
+        print(_id)
+        print("Looking for publication --------------------")
+        AF.request(Constant.host + "api/publication/show",
+                   method: .post,
+                   parameters: ["_id": _id],
+                   encoding: URLEncoding.default)
+            .validate(statusCode: 200..<300)
+            .validate(contentType: ["application/json"])
+            .responseData { response in
+                print(response)
+                switch response.result {
+                case .success:
+                    let jsonData = JSON(response.data!)
+                    print(jsonData)
+                    UserDefaults.standard.string(forKey: "_id")
+                    let publicationn = self.makePublicationn(jsonItem: jsonData["response"])
+                    print("Found utilisateur --------------------")
+                    print(publicationn)
+                    print("-------------------------------")
+                    completed(true, publicationn)
+                case let .failure(error):
+                    debugPrint(error)
+                    print("-------5555----55")
+                    completed(false, nil)
+                }
+            }
+    }
+    
+    
+    
     
     func ajouterPublication(publication: Publicationn, videoUrl: UIImage, completed: @escaping (Bool,Publicationn?) -> Void ) {
         
@@ -103,6 +134,7 @@ class PublicationViewModel {
                     print("Success")
                     let jsonData = JSON(response.data!)
                     let publicationn = self.makePublicationn(jsonItem: jsonData["post"])
+                    
                     completed(true, publicationn)
                 case let .failure(error):
                     completed(false, nil)
@@ -136,7 +168,7 @@ class PublicationViewModel {
                     print("************************hhhhhh****************")
                     print(_id)
                     UserDefaults.standard.string(forKey: "_id")
-
+                    UserDefaults.standard.setValue(publicationn._id, forKey: "_id")
                     completed(true,publicationn)
                 case let .failure(error):
                     debugPrint(error)

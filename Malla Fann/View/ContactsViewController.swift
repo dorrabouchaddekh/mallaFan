@@ -112,7 +112,7 @@ class ContactsViewController: UIViewController , UITableViewDataSource, UITableV
                 self.linksTableView.reloadData()
 
             }else {
-                self.present(Alert.makeAlert(titre: "Error", message: "Could not load publications "),animated: true)
+             //   self.present(Alert.makeAlert(titre: "Error", message: "Could not load publications "),animated: true)
             }
         })}
     

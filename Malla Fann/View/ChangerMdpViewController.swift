@@ -74,7 +74,7 @@ class ChangerMdpViewController: UIViewController {
                 }
                 self.present(Alert.makeSingleActionAlert(titre: "Success", message: "Your password has been changed", action: action), animated: true)
             }else{
-                self.present(Alert.makeAlert(titre: "Error", message: "Could not change your password"), animated: true)
+              //  self.present(Alert.makeAlert(titre: "Error", message: "Could not change your password"), animated: true)
             }
         })
     }
