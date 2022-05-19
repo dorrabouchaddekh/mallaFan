@@ -29,15 +29,18 @@ This project is a starting version for an IOS application.
 
 ### SCREENSHOTS
 
+
 ###
-![Simulator Screen Shot - iPhone 11 - 2022-05-19 at 09 17 39](https://user-images.githubusercontent.com/49404426/169246695-71b65c7e-0a1a-486d-b072-4f0ccf48065a.png)           |  ![Simulator Screen Shot - iPhone 11 - 2022-05-19 at 09 17 52](https://user-images.githubusercontent.com/49404426/169246736-06f8a7db-968a-4968-981b-98213bd6fcc2.png)          |![Simulator Screen Shot - iPhone 11 - 2022-05-19 at 09 17 52](https://user-images.githubusercontent.com/49404426/169246736-06f8a7db-968a-4968-981b-98213bd6fcc2.png)
+![Simulator Screen Shot - iPhone 11 - 2022-05-19 at 09 17 39](https://user-images.githubusercontent.com/49404426/169246695-71b65c7e-0a1a-486d-b072-4f0ccf48065a.png)           |  ![Simulator Screen Shot - iPhone 11 - 2022-05-19 at 09 17 52](https://user-images.githubusercontent.com/49404426/169246736-06f8a7db-968a-4968-981b-98213bd6fcc2.png)          |![Simulator Screen Shot - iPhone 11 - 2022-05-19 at 10 26 58](https://user-images.githubusercontent.com/49404426/169261035-4c5bdbd0-4099-47e3-ad5a-574db4ab1d85.png)
 :-------------------------:|:-------------------------:|:-------------------------:
-![Simulator Screen Shot - iPhone 11 - 2022-05-19 at 09 22 20](https://user-images.githubusercontent.com/49404426/169247655-60e7609f-83c7-44b5-9fe8-8704ecc86944.png)  |  ![](https://...Ocean.png)  | ![Simulator Screen Shot - iPhone 11 - 2022-05-19 at 09 52 02](https://user-images.githubusercontent.com/49404426/169253764-2e75f0ac-9c10-46c4-813c-9cefde2a1dc6.png)
+![Simulator Screen Shot - iPhone 11 - 2022-05-19 at 09 22 20](https://user-images.githubusercontent.com/49404426/169247655-60e7609f-83c7-44b5-9fe8-8704ecc86944.png)  |![Simulator Screen Shot - iPhone 11 - 2022-05-19 at 10 25 17](https://user-images.githubusercontent.com/49404426/169260659-9824e117-5b12-4578-9244-ea2e79c13a6e.png)  ![](https://...Ocean.png)  | ![Simulator Screen Shot - iPhone 11 - 2022-05-19 at 09 52 02](https://user-images.githubusercontent.com/49404426/169253764-2e75f0ac-9c10-46c4-813c-9cefde2a1dc6.png)
 
 
 
 
-###![Simulator Screen Shot - iPhone 11 - 2022-05-19 at 09 51 51](https://user-images.githubusercontent.com/49404426/169253715-db4a646f-0e8b-45a4-ad6e-1b98486c0d95.png)
+
+
+
 
 
 
